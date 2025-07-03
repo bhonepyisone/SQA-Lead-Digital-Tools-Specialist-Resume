@@ -1,0 +1,189 @@
+/* --- Google Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* --- Global Styles --- */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit; /* Links will have the same color as the parent text */
+    text-decoration: none; /* No underlines */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* --- Resume Container --- */
+.resume-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    min-height: 1100px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* --- Left Column --- */
+.left-column {
+    background-color: #2c3e50; /* Dark blue-gray from your resume */
+    color: #ffffff;
+    padding: 30px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-pic-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #34495e;
+}
+
+.left-column h3 {
+    color: #ffffff;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contact-info p, .about-section p, .education-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.contact-info i {
+    color: #3498db;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-section li {
+    background-color: #34495e;
+    color: #ffffff;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+
+/* --- Right Column --- */
+.right-column {
+    padding: 40px;
+    width: 65%;
+}
+
+.main-header {
+    margin-bottom: 40px;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    color: #2c3e50;
+    font-weight: 900;
+}
+
+.main-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-weight: 400;
+}
+
+.right-column h3 {
+    font-size: 1.6rem;
+    color: #34495e;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.job {
+    margin-bottom: 25px;
+}
+
+.job-meta {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+.job h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.job h5 {
+    margin: 0 0 10px 0;
+    font-style: italic;
+    font-weight: normal;
+    color: #555;
+}
+
+.job ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.job li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.additional-info-section, .certifications-section {
+    margin-top: 30px;
+}
+
+.additional-info-section p, .certifications-section p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.additional-info-section strong {
+    color: #2c3e50;
+}
+
+/* --- Responsive Design for smaller screens --- */
+@media (max-width: 800px) {
+    .resume-container {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding is included in the width */
+    }
+    .main-header h1 {
+        font-size: 2.2rem;
+    }
+}
