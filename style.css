@@ -231,3 +231,19 @@ a:hover {
 .recommendation-link i {
     margin-right: 6px;
 }
+/* --- Soft Skills Styles in Left Column --- */
+.skills-subheading {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.soft-skills {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ecf0f1;
+    font-style: italic;
+    margin: 0;
+}
